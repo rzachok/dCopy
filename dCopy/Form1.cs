@@ -57,6 +57,7 @@ namespace dCopy
                 subFolder = Path.GetFileName(dirInfoArray[i]);
                 folder1 = Path.Combine(srcDir, subFolder);
                 folder2 = Path.Combine(dstDir, subFolder);
+                //Walk the directory tree
                 WalkDirectoryTree(folder1, folder2);
             }
 
